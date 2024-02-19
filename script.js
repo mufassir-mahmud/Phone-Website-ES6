@@ -12,7 +12,7 @@ const displayPhones = phones => {
         // step 2
         const phoneCard = document.createElement('div');
         // step 3
-        phoneCard.classList = `card w-96 bg-base-100 shadow-xl`;
+        phoneCard.classList = `card w-96 p-4 bg-base-100 shadow-xl`;
         phoneCard.innerHTML = `
         <figure><img src="${phone.image}" alt="Shoes" /></figure>
         <div class="card-body">
