@@ -8,8 +8,15 @@ const loadData = async (searchText) => {
 const displayPhones = phones => {
     const phoneContainer = document.getElementById("phone-container");
     phoneContainer.textContent = '';
-
-
+    const showAllContainer = document.getElementById('show-all-Container');
+    
+    if(phones.length > 12){
+        showAllContainer.classList.remove('hidden');
+    }
+    else{
+        showAllContainer.classList.add('hidden');
+    }
+    phones = phones.slice(0,12)
 
     phones.forEach(phone => {
         // console.log(phone);
